@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+.fonty {
+    font-family: "Work Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+  }
+  .slide {
+    display: flex;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 70vh;
+}
+.slide1{
+    background-image: url('./assets/image/1.jpg');;
+}
+.slide2{
+    background-image: url('./assets/image/2.jpg');;
+}
+.slide3{
+    background-image: url('./assets/image/3.jpg');;
+}
+.slide4{
+    background-image: url('./assets/image/4.jpg');;
+}
+.slide5{
+    background-image: url('./assets/image/5.jpg');;
+}
+.error {
+    background-image: url('./assets/image/error.jpg');
+    background-repeat: no-repeat;
+    background-size: cover; 
+    height: 100vh; 
+    margin: 0; 
+    padding: 0; 
+    justify-content: center; 
+    align-items: center; 
+}
+.lbg {
+    background-image: url('./assets/image/log.jpg');
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-position: center; 
+    height: 100vh; 
+    padding: 0; 
+    justify-content: center; 
+    align-items: center;
+}
