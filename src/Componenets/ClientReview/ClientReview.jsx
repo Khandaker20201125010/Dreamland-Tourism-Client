@@ -1,4 +1,6 @@
-import React from 'react';
+import p1 from '../../assets/image/p1.jpg';
+import p2 from '../../assets/image/p2.jpg';
+import p3 from '../../assets/image/p3.jpg';
 import { IoStarSharp } from 'react-icons/io5';
 
 const ClientReview = () => {
