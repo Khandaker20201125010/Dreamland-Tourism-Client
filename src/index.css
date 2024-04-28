@@ -52,3 +52,13 @@
     justify-content: center; 
     align-items: center;
 }
+.baka {
+    background-image: url('./assets/image/baka.avif');
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-position: center; 
+    height: 100vh; 
+    padding: 0; 
+    justify-content: center; 
+    align-items: center;
+}

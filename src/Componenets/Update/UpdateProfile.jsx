@@ -3,10 +3,11 @@ import { Link } from "react-router-dom";
 import { AuthContext } from "../Providers/Authprovider";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import { Helmet } from "react-helmet-async";
+
 import { IoMdEye } from "react-icons/io";
 import { IoMdEyeOff } from "react-icons/io";
 import ParticlesBackground from "../Particles/ParticlesBackground";
+import { Helmet } from "react-helmet";
 
 const UpdateProfile = () => {
     const {updateUser,user} = useContext(AuthContext);
@@ -29,9 +30,9 @@ const UpdateProfile = () => {
     return (
         <div className="lbg">
             <Helmet>
-          <title>Register|| Tourism</title>
-        </Helmet>
-            <div className="text-3xl my-10 text-center h-screen bg-blue-950 rounded-2xl">
+            <title>Register|| Tourism</title>
+            </Helmet>
+            <div className="text-3xl my-10 text-center h-screen bg-blue-950 rounded-2xl lbg">
                 <ParticlesBackground></ParticlesBackground>
                 <div className="w-3/4 text-center m-auto p-20">
                     <form onSubmit={handleRegister} className="md-3/4 lg:w-1/2 mx-auto bg-slate-500 p-12 rounded-2xl">
