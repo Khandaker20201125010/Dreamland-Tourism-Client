@@ -14,8 +14,9 @@ import Register from './Componenets/Register/Register.jsx';
 import Authprovider from './Componenets/Providers/Authprovider.jsx';
 import Login from './Componenets/Login/Login.jsx';
 import UpdateProfile from './Componenets/Update/UpdateProfile.jsx';
-import { HelmetProvider } from 'react-helmet-async';
 import Error from './Componenets/Error/Error.jsx';
+import Detailspage from './Componenets/Details/Details.jsx';
+import Privetroot from './Componenets/Privet/Privetroot.jsx';
 const router = createBrowserRouter([
   {
     path: "/",
@@ -27,7 +28,9 @@ const router = createBrowserRouter([
    
     },
    { path:"/AllTouristsSpot",
-    element:<AlltouristSport></AlltouristSport>},
+    element:<AlltouristSport></AlltouristSport>,
+    loader: () => fetch('http://localhost:5000/torisum')},
+   
    { path:"/AddTouristsSpot",
     element:<AddToursitSport></AddToursitSport>,
     },
@@ -40,6 +43,9 @@ const router = createBrowserRouter([
     element:<Login></Login>,},
    { path:"/Update",
     element:<UpdateProfile></UpdateProfile>,},
+    { path:"/torisum/:id",
+    element:<Privetroot><Detailspage></Detailspage></Privetroot>,
+    loader: () => fetch('http://localhost:5000/torisum')},
   ]
   },
 ]);

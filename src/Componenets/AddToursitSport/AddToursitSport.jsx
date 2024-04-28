@@ -1,5 +1,7 @@
 import { useContext } from "react";
 import { AuthContext } from "../Providers/Authprovider";
+import Swal from 'sweetalert2'
+import { Helmet } from "react-helmet";
 
 const AddToursitSport = () => {
     const { user } = useContext(AuthContext);
@@ -19,10 +21,33 @@ const AddToursitSport = () => {
         const Image = form.photo.value;
         const travelTime = form.processingTime.value;
         const newTourst = { name, TouristSpotName, countryName, shortDescription, averageCost, Location, seasonality, TotaVisitorsPerYear, email, Image, travelTime}
-        console.log(newTourst)
+        fetch('http://localhost:5000/torisum',{
+            method:'POST',
+            headers:{
+                'content-type': 'application/json'
+            },
+            body: JSON.stringify(newTourst)
+        })
+
+        .then(res => res.json())
+        .then(data => {
+            console.log(data); 
+            if(data.insetedId){
+                Swal.fire({
+                    title: 'Success!',
+                    text: 'User Added Successfully',
+                    icon: 'success',
+                    confirmButtonText: 'Cool'
+                  })
+                
+            }
+        })
     }
     return (
         <div className="baka">
+            <Helmet>
+               ^^AddToursitSport^^
+            </Helmet>
             <div className="p-5">
                 <div className="md:w-2/3 w-4/5 mx-auto shadow-lg bg-blue-200 text-black mt-5 md:mt-10 p-5 rounded-lg">
                     <h3 className="text-lg font-bold text-center">Add Tourist Spot</h3>
