@@ -1,6 +1,7 @@
-import PropTypes from 'prop-types';
+
 import { Link } from 'react-router-dom';
 import Swal from 'sweetalert2';
+
 
 
 const Mytoursit = ({ item }) => {
@@ -77,6 +78,8 @@ const Mytoursit = ({ item }) => {
 
 
         <div>
+         
+            
             <div className="overflow-x-auto">
                 <table className="table mb-5 border-b-2">
 

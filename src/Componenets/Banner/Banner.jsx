@@ -5,6 +5,7 @@ import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 import { Autoplay, Pagination, Navigation } from 'swiper/modules';
+import Lottileone from '../Lottieone/Lottileone';
 
 const Banner = () => {
   return (
@@ -26,7 +27,7 @@ const Banner = () => {
         >
           <SwiperSlide><div className='slide slide1'>
             <div className='m-auto'>
-              <h1 className='text-8xl text-center text-cyan-300 m-auto font-bold'>Dreamland Tourism</h1>
+              <h1 className='text-8xl text-center text-cyan-300 m-auto font-bold'> Dreamland Tourism</h1>
               <p className='text-xl text-center m-auto w-2/3 text-cyan-300 mt-5 font-bold'>Welcome to Dreamland Tourism, your gateway to unforgettable journeys and immersive travel experiences. Embark on a digital voyage with us as we guide you through a world of captivating destinations, hidden gems, and cultural treasures waiting to be discovered.</p>
 
               <div className='m-auto text-center mt-5'>

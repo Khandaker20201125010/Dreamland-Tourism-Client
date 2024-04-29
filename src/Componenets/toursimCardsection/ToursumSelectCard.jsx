@@ -1,5 +1,7 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import Lottileone from "../Lottieone/Lottileone";
+
 
 
 const ToursumSelectCard = () => {
@@ -11,16 +13,23 @@ const ToursumSelectCard = () => {
     },[])
     const sliceItem = toursim.slice(0,6)
     return (
-        <div>
+        <div className="text-center m-auto items-center align-middle">
+            <div className="h-full ml-[550px] mt-5">
+          <Lottileone></Lottileone>
+
+          </div>
             <div>
-            <h2 className="text-2xl font-bold text-center mt-10 mb-5">Tourist Spot</h2>
+            <h2 className="text-2xl font-bold text-center mt-10 mb-5"> Tourist Spot</h2>
             <p className="text-xl text-center m-auto md:w-2/3  mt-5 font-bold">Introducing a tourist website involves capturing the essence of wanderlust, adventure, and discovery that drives travelers to explore the world. </p>
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5 mt-5 md:mt-10">
+            
+                 
                 {
                     sliceItem.map(slItem =>    <div key={slItem._id} data-aos="zoom-in" className='border p-5 flex flex-col shadow-lg rounded-md'>
                          <div className='flex justify-center items-center'>
                               <img className='w-72 h-48 rounded-md border mb-5' src={slItem.Image} alt="" />
                            </div>
+                           
                           <div className='flex-grow'>
                            <h2 className='text-2xl font-bold mb-5'>{slItem.TouristSpotName}</h2>
                           <h2 className='text-2xl font-bold  '>Category: <span className='text-2xl font-bold text-red-400'>{slItem.countryName}</span></h2>

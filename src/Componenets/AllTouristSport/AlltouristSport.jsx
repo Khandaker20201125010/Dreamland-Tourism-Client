@@ -2,6 +2,7 @@ import { useLoaderData } from "react-router-dom";
 import Tourismcard from "../toursmcard/Tourismcard";
 import { FaChevronDown } from "react-icons/fa";
 import { useEffect, useState } from "react";
+import Lottileone from "../Lottieone/Lottileone";
 
 
 const AlltouristSport = () => {
@@ -28,6 +29,7 @@ const AlltouristSport = () => {
 
     return (
         <div className=" ">
+         
             <div className="my-5 flex justify-center items-center">
                 <details className="dropdown">
                     <summary className="m-1 btn font-bold flex gap-2 justify-center items-center">Select spot By<FaChevronDown></FaChevronDown></summary>

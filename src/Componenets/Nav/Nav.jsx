@@ -4,6 +4,7 @@ import ico from '../../assets/image/ico.png'
 import 'animate.css';
 import { AuthContext } from "../Providers/Authprovider";
 import { useContext } from "react";
+import Lottileone from "../Lottieone/Lottileone";
 const Nav = () => {
     const { user, logOut } = useContext(AuthContext);
     const handelSignOut = () => {
@@ -15,8 +16,8 @@ const Nav = () => {
                 console.error("Error signing out:", error);
             });
     }
-    
-    
+
+
     const links = (
         <>
             <li>
@@ -86,7 +87,7 @@ const Nav = () => {
                         {links}
                     </ul>
                 </div>
-                <a className="animate__animated animate__flip ml-10 text-3xl text-info flex flex-col font-bold">Dreamland <span className="text-info ml-16 text-2xl flex gap-2 font-bold"><img src={ico} alt="" /> Tourism</span></a>
+                <a className="animate__animated animate__flip ml-10 text-3xl text-info flex flex-col font-bold">Dreamland  <span className="text-info ml-16 text-2xl flex gap-2 font-bold"><img src={ico} alt="" /> Tourism</span></a>
             </div>
             <div className="navbar-center hidden lg:flex">
                 <ul className="menu menu-horizontal px-1 gap-4 text-white">

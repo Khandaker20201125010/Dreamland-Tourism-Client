@@ -16,6 +16,7 @@ import 'react-toastify/dist/ReactToastify.css';
 import app from "../Firebase/firebase.config";
 import ParticlesBackground from "../Particles/ParticlesBackground";
 import { Helmet } from "react-helmet";
+import Lottileone from "../Lottieone/Lottileone";
 const Login = () => {
     const auth = getAuth(app)
     const googleProvider = new GoogleAuthProvider();
@@ -43,6 +44,7 @@ const Login = () => {
     const googleSignIn = () => {
         signInWithPopup(auth, googleProvider)
             .then(result => {
+                console.log(result.user)
                 const loggedInUser = result.user;
                 setUser(loggedInUser);
                 toast.success('Logged in with Google successfully!');
@@ -70,6 +72,10 @@ const Login = () => {
     return (
         <div className="text-3xl my-10 text-center rounded-2xl lbg ">
             <ParticlesBackground></ParticlesBackground>
+            <div className="w-full">
+            <Lottileone></Lottileone>
+            </div>
+            
             <Helmet>
                 <title>Login || Tourism</title>
             </Helmet>
