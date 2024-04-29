@@ -31,15 +31,14 @@ const AddToursitSport = () => {
 
         .then(res => res.json())
         .then(data => {
-            console.log(data); 
-            if(data.insetedId){
+            console.log(data);
+            if (data.insertedId) {
                 Swal.fire({
                     title: 'Success!',
                     text: 'User Added Successfully',
                     icon: 'success',
                     confirmButtonText: 'Cool'
-                  })
-                
+                });
             }
         })
     }
@@ -108,7 +107,7 @@ const AddToursitSport = () => {
                         </div>
 
 
-                        <input className="w-full py-2 mb-6 font-bold hover:bg-blue-400 text-white bg-blue-500 mt-5" type="submit" value="Add Craft Item" />
+                        <input className="w-full py-2 mb-6 font-bold hover:bg-blue-400 text-white bg-blue-500 mt-5" type="submit" value="Add Tourist Spot" />
 
                     </form>
                 </div>

@@ -10,11 +10,10 @@ const ToursumSelectCard = () => {
         .then(data => setToursim(data))
     },[])
     const sliceItem = toursim.slice(0,6)
-    console.log(sliceItem)
     return (
         <div>
             <div>
-            <h2 className="text-2xl font-bold text-center mb-5">Craft Items Section</h2>
+            <h2 className="text-2xl font-bold text-center mb-5">Tourist Spot</h2>
             <p className="md:w-1/3 mx-auto">Craft items can be made from various materials, including wood, metal, glass, fabric, paper, clay, and natural elements like shells or stones. The choice of material often depends on the desired aesthetic, function, and the artisan expertise.</p>
 
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5 mt-5 md:mt-10">

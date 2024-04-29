@@ -17,6 +17,7 @@ import UpdateProfile from './Componenets/Update/UpdateProfile.jsx';
 import Error from './Componenets/Error/Error.jsx';
 import Detailspage from './Componenets/Details/Details.jsx';
 import Privetroot from './Componenets/Privet/Privetroot.jsx';
+import Updatecard from './Componenets/Updatecard/Updatecard.jsx';
 const router = createBrowserRouter([
   {
     path: "/",
@@ -43,6 +44,9 @@ const router = createBrowserRouter([
     element:<Login></Login>,},
    { path:"/Update",
     element:<UpdateProfile></UpdateProfile>,},
+   { path:"/updatecard/:id",
+    element:<Updatecard></Updatecard>,
+    loader: ({params}) => fetch(`http://localhost:5000/torisum/place/${params.id}`)},
     { path:"/torisum/:id",
     element:<Privetroot><Detailspage></Detailspage></Privetroot>,
     loader: () => fetch('http://localhost:5000/torisum')},

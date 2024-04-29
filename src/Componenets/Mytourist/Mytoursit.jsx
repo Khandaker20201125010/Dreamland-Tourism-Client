@@ -18,7 +18,7 @@ const Mytoursit = ({ item }) => {
         }).then((result) => {
             if (result.isConfirmed) {
 
-                fetch(`http://localhost:5000/craft/${_id}`, {
+                fetch(`http://localhost:5000/torisum/${_id}`, {
                     method: 'DELETE'
                 })
                     .then(res => res.json())
@@ -59,9 +59,9 @@ const Mytoursit = ({ item }) => {
             </div>
 
             <div className='flex justify-between'>
-                <Link to={`/myCard/${_id}`}><button className='bg-green-500 px-4 py-2 rounded-md text-bold text-white'>View More</button></Link>
+                <Link to={`/torisum/${_id}`}><button className='bg-green-500 px-4 py-2 rounded-md text-bold text-white'>View More</button></Link>
 
-                <Link to={`/updateCard/${_id}`}><button className='bg-yellow-500 px-4 py-2 rounded-md text-bold text-white'>Edit</button></Link>
+                <Link to={`/updatecard/${_id}`}><button className='bg-yellow-500 px-4 py-2 rounded-md text-bold text-white'>Edit</button></Link>
 
                 <button onClick={() => handleDelete(_id)} className='bg-red-500 px-4 py-2 rounded-md text-bold text-white'>Delete</button>
             </div>
