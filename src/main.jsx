@@ -18,6 +18,7 @@ import Error from './Componenets/Error/Error.jsx';
 import Detailspage from './Componenets/Details/Details.jsx';
 import Privetroot from './Componenets/Privet/Privetroot.jsx';
 import Updatecard from './Componenets/Updatecard/Updatecard.jsx';
+import CountryBangladesh from './Componenets/CountryBangladesh/CountryBangladesh.jsx';
 const router = createBrowserRouter([
   {
     path: "/",
@@ -29,23 +30,27 @@ const router = createBrowserRouter([
    
     },
    { path:"/AllTouristsSpot",
-    element:<AlltouristSport></AlltouristSport>,
+    element:<Privetroot><AlltouristSport></AlltouristSport></Privetroot>,
     loader: () => fetch('http://localhost:5000/torisum')},
    
    { path:"/AddTouristsSpot",
-    element:<AddToursitSport></AddToursitSport>,
+    element:<Privetroot><AddToursitSport></AddToursitSport></Privetroot>,
     },
    { path:"/MyList",
-    element:<Mylist></Mylist>,
+    element:<Privetroot><Mylist></Mylist></Privetroot>,
     },
    { path:"/register",
     element:<Register></Register>,},
    { path:"/Login",
     element:<Login></Login>,},
+   { path:"/CountryBangladesh",
+    element:<CountryBangladesh></CountryBangladesh>,
+    },
    { path:"/Update",
-    element:<UpdateProfile></UpdateProfile>,},
+    element:<Privetroot><UpdateProfile></UpdateProfile></Privetroot>,
+  },
    { path:"/updatecard/:id",
-    element:<Updatecard></Updatecard>,
+    element:<Privetroot><Updatecard></Updatecard></Privetroot>,
     loader: ({params}) => fetch(`http://localhost:5000/torisum/place/${params.id}`)},
     { path:"/torisum/:id",
     element:<Privetroot><Detailspage></Detailspage></Privetroot>,

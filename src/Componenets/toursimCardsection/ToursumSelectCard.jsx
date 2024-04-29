@@ -13,8 +13,8 @@ const ToursumSelectCard = () => {
     return (
         <div>
             <div>
-            <h2 className="text-2xl font-bold text-center mb-5">Tourist Spot</h2>
-            <p className="md:w-1/3 mx-auto">Introducing a tourist website involves capturing the essence of wanderlust, adventure, and discovery that drives travelers to explore the world. </p>
+            <h2 className="text-2xl font-bold text-center mt-10 mb-5">Tourist Spot</h2>
+            <p className="text-xl text-center m-auto md:w-2/3  mt-5 font-bold">Introducing a tourist website involves capturing the essence of wanderlust, adventure, and discovery that drives travelers to explore the world. </p>
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5 mt-5 md:mt-10">
                 {
                     sliceItem.map(slItem =>    <div key={slItem._id} data-aos="zoom-in" className='border p-5 flex flex-col shadow-lg rounded-md'>

@@ -15,6 +15,12 @@ const Home = () => {
             <div className="container m-auto">
                 <ToursumSelectCard></ToursumSelectCard>
             </div>
+
+            <div>
+
+            </div>
+
+            
             <div className="container m-auto">
                 <ClientReview></ClientReview>
             </div>
