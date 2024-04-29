@@ -5,12 +5,12 @@ import { initializeApp } from "firebase/app";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyASiRNuDXczzlSEckGRKPuXuN2Tq83QX-Y",
-  authDomain: "dreamland-tourism.firebaseapp.com",
-  projectId: "dreamland-tourism",
-  storageBucket: "dreamland-tourism.appspot.com",
-  messagingSenderId: "33957685419",
-  appId: "1:33957685419:web:ea6185979ac13a59962fee"
+  apiKey: import.meta.env.VITE_ApiKey,
+  authDomain: import.meta.env.VITE_AuthDomain,
+  projectId: import.meta.env.VITE_ProjectId,
+  storageBucket: import.meta.env.VITE_StorageBucket,
+  messagingSenderId: import.meta.env.VITE_MessagingSenderId,
+  appId: import.meta.env.VITE_AppId,
 };
 
 // Initialize Firebase
