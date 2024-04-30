@@ -10,7 +10,7 @@ const Catagoryextra = () => {
 
         <div className=' grid md:grid-cols-2 gap-5 mt-10 md:mt-10 lg:grid-cols-3'>
             {
-                filerCountry.map(tour => <CatagroyPartTwo key={tour._id} tour={tour}></CatagroyPartTwo>)
+                filerCountry?.map(tour => <CatagroyPartTwo key={tour._id} tour={tour}></CatagroyPartTwo>)
             }
             
 

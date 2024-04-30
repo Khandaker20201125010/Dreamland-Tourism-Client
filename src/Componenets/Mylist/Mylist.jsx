@@ -6,7 +6,7 @@ const Mylist = () => {
     const { user } = useContext(AuthContext)
     const [items, setItems] = useState([])
     useEffect(() => {
-        fetch(`http://localhost:5000/torisum/${user?.email}`)
+        fetch(`https://tourism-management-server-cyan-ten.vercel.app/torisum/${user?.email}`)
             .then(res => res.json())
             .then(data => {
                 setItems(data)
@@ -18,7 +18,7 @@ const Mylist = () => {
             
             <div className="">
                 {
-                    items.map(item => <Mytoursit key={item._id}
+                    items?.map(item => <Mytoursit key={item._id}
                         item={item}></Mytoursit>)
                 }
             </div>

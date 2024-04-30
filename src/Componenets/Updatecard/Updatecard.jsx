@@ -29,7 +29,7 @@ const Updatecard = () => {
 
         // update data to server 
 
-        // fetch(`http://localhost:5000/torisum/place/${_id}`, {
+        // fetch(`https://tourism-management-server-cyan-ten.vercel.app/torisum/place/${_id}`, {
         //     method: 'PUT',
         //     headers: {
         //         'content-type': 'application/json'
@@ -48,7 +48,7 @@ const Updatecard = () => {
         //         }
         //         navigate('/MyList')
         //     })
-        fetch(`http://localhost:5000/torisum/place/${_id}`, {
+        fetch(`https://tourism-management-server-cyan-ten.vercel.app/torisum/place/${_id}`, {
 
             method: "PUT",
             headers: {

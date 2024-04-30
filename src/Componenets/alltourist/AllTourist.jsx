@@ -3,11 +3,20 @@ import TouristCatagory from "../TourisCatagory/TouristCatagory";
 
 const AllTourist = () => {
     const [tourist,settourist] =useState([]);
-    useEffect(()=>{
-        fetch('http://localhost:5000/newtourism')
-        .then(res => res.json())
-        .then(data => settourist(data))
-    },[])
+    useEffect(() => {
+        async function fetchData() {
+            try {
+                const response = await fetch('https://tourism-management-server-cyan-ten.vercel.app/newtourism');
+                const data = await response.json();
+                settourist(data);
+            } catch (error) {
+                console.error('Error fetching data:', error);
+            }
+        }
+    
+        fetchData();
+    
+    }, []);
     return (
         <div className="container m-auto mt-20">
             <div>
@@ -16,7 +25,7 @@ const AllTourist = () => {
             </div>
                <div className=' grid md:grid-cols-2 gap-5 mt-10 md:mt-10 lg:grid-cols-3'>
             {
-               tourist.map(tour =><TouristCatagory key={tour._id} tour={tour}></TouristCatagory>)
+               tourist?.map(tour =><TouristCatagory key={tour._id} tour={tour}></TouristCatagory>)
             }
             
         </div>

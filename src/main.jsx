@@ -32,7 +32,7 @@ const router = createBrowserRouter([
     },
    { path:"/AllTouristsSpot",
     element:<Privetroot><AlltouristSport></AlltouristSport></Privetroot>,
-    loader: () => fetch('http://localhost:5000/torisum')},
+    loader: () => fetch('https://tourism-management-server-cyan-ten.vercel.app/torisum')},
    
    { path:"/AddTouristsSpot",
     element:<Privetroot><AddToursitSport></AddToursitSport></Privetroot>,
@@ -52,14 +52,14 @@ const router = createBrowserRouter([
   },
    { path:"/Catagoryextra/:countryName",
     element:<Catagoryextra></Catagoryextra>,
-    loader: () => fetch('http://localhost:5000/torisum'),
+    loader: () => fetch('https://tourism-management-server-cyan-ten.vercel.app/torisum'),
   },
    { path:"/updatecard/:id",
     element:<Privetroot><Updatecard></Updatecard></Privetroot>,
-    loader: ({params}) => fetch(`http://localhost:5000/torisum/place/${params.id}`)},
+    loader: ({params}) => fetch(`https://tourism-management-server-cyan-ten.vercel.app/torisum/place/${params.id}`)},
     { path:"/torisum/:id",
     element:<Privetroot><Detailspage></Detailspage></Privetroot>,
-    loader: () => fetch('http://localhost:5000/torisum')},
+    loader: () => fetch('https://tourism-management-server-cyan-ten.vercel.app/torisum')},
   ]
   },
 ]);

@@ -8,7 +8,7 @@ import { Typewriter } from "react-simple-typewriter";
 const ToursumSelectCard = () => {
     const [toursim,setToursim] =useState([]);
     useEffect(()=>{
-        fetch('http://localhost:5000/torisum')
+        fetch('https://tourism-management-server-cyan-ten.vercel.app/torisum')
         .then(res => res.json())
         .then(data => setToursim(data))
     },[])
@@ -40,7 +40,7 @@ const ToursumSelectCard = () => {
             
                  
                 {
-                    sliceItem.map(slItem => <div key={slItem._id} data-aos="zoom-in" className='border p-5 flex flex-col shadow-lg rounded-md'>
+                    sliceItem?.map(slItem => <div key={slItem._id} data-aos="zoom-in" className='border p-5 flex flex-col shadow-lg rounded-md'>
                          <div className='flex justify-center items-center'>
                               <img className='w-72 h-48 rounded-md border mb-5' src={slItem.Image} alt="" />
                            </div>

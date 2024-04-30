@@ -21,7 +21,7 @@ const AddToursitSport = () => {
         const Image = form.photo.value;
         const travelTime = form.processingTime.value;
         const newTourst = { name, TouristSpotName, countryName, shortDescription, averageCost, Location, seasonality, TotaVisitorsPerYear, email, Image, travelTime}
-        fetch('http://localhost:5000/torisum',{
+        fetch('https://tourism-management-server-cyan-ten.vercel.app/torisum',{
             method:'POST',
             headers:{
                 'content-type': 'application/json'

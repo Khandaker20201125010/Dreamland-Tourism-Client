@@ -6,7 +6,7 @@ const CountryBangladesh = () => {
     const [allDataPro, setAllDataPro] = useState([])
 
     useEffect(() => {
-        fetch('http://localhost:5000/torisum')
+        fetch('https://tourism-management-server-cyan-ten.vercel.app/torisum')
             .then(res => res.json())
             .then(data => {
 
@@ -26,7 +26,7 @@ const CountryBangladesh = () => {
                 <h2 className="text-2xl font-bold text-center my-5">All Charcoal Sketching Items</h2>
             <div className="grid md:grid-cols-2 lg:grid-cols-3 mt-10 gap-5 px-5">
                 {/* {
-                    allDAta.map(item =><Charcoal key={item._id} item={item}></Charcoal>  )
+                    allDAta?.map(item =><Charcoal key={item._id} item={item}></Charcoal>  )
                 } */}
             </div>
 
