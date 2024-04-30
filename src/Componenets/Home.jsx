@@ -2,6 +2,7 @@ import { Helmet } from "react-helmet";
 import Header from "./Pages/Header/Header";
 import ToursumSelectCard from "./toursimCardsection/ToursumSelectCard";
 import ClientReview from "./ClientReview/ClientReview";
+import MoreSpot from "./MoreSpot/MoreSpot";
 
 
 const Home = () => {
@@ -23,6 +24,9 @@ const Home = () => {
             
             <div className="container m-auto">
                 <ClientReview></ClientReview>
+            </div>
+            <div>
+                <MoreSpot></MoreSpot>
             </div>
         </div>
     );

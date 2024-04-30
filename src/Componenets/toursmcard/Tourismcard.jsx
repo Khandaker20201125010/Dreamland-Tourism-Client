@@ -16,7 +16,7 @@ const Tourismcard = ({ tourism }) => {
                     <h2 className='text-2xl font-bold  '>
                         CountryName:{countryName} <span className='text-2xl font-bold text-red-400'>{subcategoryName}</span></h2>
                     <div className='my-5 flex justify-between items-center '>
-                        <p className='font-bold'>Price : {averageCost}</p>
+                        <p className='font-bold'>Price : {averageCost}TK</p>
                         <p className='font-bold flex gap-2'>Seasonality: <span className='text-blue-700 text-xl'>{seasonality}</span></p>
                     </div>
                     <div className='my-5  '>

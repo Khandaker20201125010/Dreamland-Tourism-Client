@@ -74,7 +74,7 @@ const Mytoursit = ({ item }) => {
                                 <p><span className='font-bold'>Description :</span> {shortDescription}</p>
                             </td>
                             <td>
-                                <p><span className='font-bold'>Price :</span> {averageCost}</p>
+                                <p><span className='font-bold'>Price :</span> {averageCost}TK</p>
                                 <p><span className='font-bold'>Travel Time :</span> {travelTime} days</p>
 
                             </td>

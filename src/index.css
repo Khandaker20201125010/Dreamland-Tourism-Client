@@ -73,3 +73,6 @@
 .all{
     background-image: url('./assets/image/all.jpg');;
 }
+.swiper-slide-custom {
+    margin-right: 10px; /* Adjust this value to bring images closer */
+}

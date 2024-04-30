@@ -49,7 +49,7 @@ const ToursumSelectCard = () => {
                            <h2 className='text-2xl font-bold mb-5'>{slItem.TouristSpotName}</h2>
                           <h2 className='text-2xl font-bold  '>Country name: <span className='text-2xl font-bold text-red-400'>{slItem.countryName}</span></h2>
                            <div className='my-5 flex justify-between items-center '>
-                              <p className='font-bold'>Price : {slItem.averageCost}</p>
+                              <p className='font-bold'>Price : {slItem.averageCost}Tk</p>
                               <p className='font-bold flex gap-2'>Rating : <span className='text-yellow-700 text-xl'>{slItem.Location}</span></p>
                          </div>
                            <div className='my-5  '>

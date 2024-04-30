@@ -26,7 +26,7 @@ const Detailspage = () => {
                     <h2 className="font-bold">{DetailsCard.countryName}</h2>
                     <p className="animate__animated animate__bounceInRight mt-5">{DetailsCard.shortDescription}</p>
                     <div className="mt-5">
-                    <h className="text-bold text-2xl text-blue-500 mt-5">Price :{DetailsCard.averageCost}</h>
+                    <h className="text-bold text-2xl text-blue-500 mt-5">Price :{DetailsCard.averageCost}TK</h>
                     </div>
                 
                     <div className="flex justify-evenly mt-5">
