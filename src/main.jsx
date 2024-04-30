@@ -19,6 +19,7 @@ import Detailspage from './Componenets/Details/Details.jsx';
 import Privetroot from './Componenets/Privet/Privetroot.jsx';
 import Updatecard from './Componenets/Updatecard/Updatecard.jsx';
 import CountryBangladesh from './Componenets/CountryBangladesh/CountryBangladesh.jsx';
+import Catagoryextra from './Componenets/Catagory/Catagoryextra.jsx';
 const router = createBrowserRouter([
   {
     path: "/",
@@ -48,6 +49,10 @@ const router = createBrowserRouter([
     },
    { path:"/Update",
     element:<Privetroot><UpdateProfile></UpdateProfile></Privetroot>,
+  },
+   { path:"/Catagoryextra/:countryName",
+    element:<Catagoryextra></Catagoryextra>,
+    loader: () => fetch('http://localhost:5000/torisum'),
   },
    { path:"/updatecard/:id",
     element:<Privetroot><Updatecard></Updatecard></Privetroot>,

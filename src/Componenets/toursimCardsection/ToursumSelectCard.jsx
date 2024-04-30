@@ -15,7 +15,7 @@ const ToursumSelectCard = () => {
     const sliceItem = toursim.slice(0,6)
     return (
         <div className="text-center m-auto items-center align-middle">
-            <div className="h-full ml-[550px] mt-5">
+            <div className="h-full ml-[665px] mt-5">
           <Lottileone></Lottileone>
 
           </div>

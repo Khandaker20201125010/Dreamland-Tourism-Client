@@ -3,6 +3,7 @@ import Header from "./Pages/Header/Header";
 import ToursumSelectCard from "./toursimCardsection/ToursumSelectCard";
 import ClientReview from "./ClientReview/ClientReview";
 import MoreSpot from "./MoreSpot/MoreSpot";
+import AllTourist from "./alltourist/AllTourist";
 
 
 const Home = () => {
@@ -18,7 +19,7 @@ const Home = () => {
             </div>
 
             <div>
-                   
+                   <AllTourist></AllTourist>
             </div>
                   
             
