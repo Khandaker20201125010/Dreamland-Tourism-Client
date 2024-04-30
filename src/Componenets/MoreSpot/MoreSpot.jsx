@@ -18,7 +18,7 @@ import "swiper/swiper-bundle.css";
 const MoreSpot = () => {
     return (
         <>
-            <h3 className="text-3xl font-bold mt-20 text-center">More Sport </h3> <br />
+            <h3 className="text-3xl font-bold mt-20 text-center">More Spot </h3> <br />
             <div>
                 <Swiper watchSlidesProgress={true} slidesPerView={3} className="mySwiper">
                     <SwiperSlide>

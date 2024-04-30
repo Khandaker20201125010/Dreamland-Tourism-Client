@@ -8,7 +8,7 @@ import MoreSpot from "./MoreSpot/MoreSpot";
 const Home = () => {
     return (
         
-        <div>
+        <div className="fonty">
         <Helmet>
           <title>Home || Tourism</title>
         </Helmet>
@@ -22,10 +22,10 @@ const Home = () => {
             </div>
                   
             
-            <div className="container m-auto">
+            <div className="container m-auto fonty">
                 <ClientReview></ClientReview>
             </div>
-            <div>
+            <div className="fonty">
                 <MoreSpot></MoreSpot>
             </div>
         </div>
