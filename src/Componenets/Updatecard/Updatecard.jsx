@@ -76,7 +76,7 @@ return (
         </Helmet>
         <div className="p-5">
             <div className="md:w-2/3 w-4/5 mx-auto shadow-lg bg-blue-200 text-black mt-5 md:mt-10 p-5 rounded-lg">
-                <h3 className="text-lg font-bold text-center">Add Tourist Spot</h3>
+                <h3 className="text-lg font-bold text-center">Update Tourist Spot</h3>
                 <form onSubmit={handleUpdateToursim}>
                     <div className="grid md:grid-cols-2 gap-5 mt-5">
                         <div>
@@ -124,7 +124,7 @@ return (
                     </div>
 
 
-                    <input className="w-full py-2 mb-6 font-bold hover:bg-blue-400 text-white bg-blue-500 mt-5" type="submit" value="Add Tourist Spot" />
+                    <input className="w-full py-2 mb-6 font-bold hover:bg-blue-400 text-white bg-blue-500 mt-5" type="submit" value="Update Tourist Spot" />
 
                 </form>
             </div>

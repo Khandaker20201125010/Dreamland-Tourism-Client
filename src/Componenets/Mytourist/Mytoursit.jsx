@@ -1,4 +1,5 @@
 
+import { Fade } from 'react-awesome-reveal';
 import { Link } from 'react-router-dom';
 import Swal from 'sweetalert2';
 
@@ -40,46 +41,9 @@ const Mytoursit = ({ item }) => {
 
     const { _id,name, TouristSpotName, countryName, shortDescription, averageCost, Location, seasonality, TotaVisitorsPerYear, email, Image, travelTime } = item
     return (
-        // <div data-aos="zoom-in" className='border p-5 flex flex-col shadow-lg rounded-md'>
-        //     <div className='flex justify-center items-center'>
-        //         <img className='w-72 h-48 rounded-md border mb-5' src={Image} alt="" />
-        //     </div>
-        //     <div className='flex-grow'>
-        //         <h2 className='text-2xl font-bold mb-5'>{itemName}</h2>
-        //         <h2 className='text-2xl font-bold  '>Category: <span className='text-2xl font-bold text-red-400'>{subcategoryName}</span></h2>
-        //         <div className='my-5 flex justify-between items-center '>
-        //             <p className='font-bold'>Price : {price}</p>
-        //             <p className='font-bold flex gap-2'>Rating : <span className='text-yellow-700 text-xl'>{rating}</span></p>
-        //         </div>
-        //         <div className='my-5  '>
-        //             <p className='font-bold mb-3'>Processing Time : {processingTime} days</p>
-        //             <p className='font-bold flex gap-2'>Customization : <span className='text-red-500'>{}</span></p>
-        //             <p className='font-bold mb-3'>Item Type : {itemType}</p>
-        //         </div>
-
-        //     </div>
-
-        //     <div className='flex justify-between'>
-        //         <Link to={`/torisum/${_id}`}><button className='bg-green-500 px-4 py-2 rounded-md text-bold text-white'>View More</button></Link>
-
-        //         <Link to={`/updatecard/${_id}`}><button className='bg-yellow-500 px-4 py-2 rounded-md text-bold text-white'>Edit</button></Link>
-
-        //         <button onClick={() => handleDelete(_id)} className='bg-red-500 px-4 py-2 rounded-md text-bold text-white'>Delete</button>
-        //     </div>
-
-
-
-        // </div>
-
-
-
-
-
-
-
+      
         <div>
-         
-            
+            <Fade>      
             <div className="overflow-x-auto">
                 <table className="table mb-5 border-b-2">
 
@@ -128,10 +92,9 @@ const Mytoursit = ({ item }) => {
                             </th>
                         </tr>
                     </tbody>
-
-
                 </table>
             </div>
+            </Fade>
         </div>
     );
 };
